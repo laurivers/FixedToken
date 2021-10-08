@@ -4,6 +4,13 @@ var mnemonic = "market cram speak focus cliff vague domain edge opinion thank so
  
 module.exports = {
   	networks: {
+        test: {
+          host: "localhost",
+          port: 7545,
+          network_id: "*",
+          gasPrice: 0x01,
+          type: "quorum",
+        },
         development: {
           host: "127.0.0.1",
           port: 7545,
